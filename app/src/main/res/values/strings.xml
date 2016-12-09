@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TET 2016</string>
+    <string name="principal_objetivo">Objetivo</string>
+    <string name="principal_obj_content">Facilitar el acceso a información de primera mano a estudiantes, profesores y profesionales afines con el área de Telecomunicaciones, que buscan aumentar y actualizar su conocimiento sobre las tecnologías que mayor penetran e impactan a la sociedad.</string>
+    <string name="principal_fecha">Fecha</string>
+    <string name="principal_fecha_content">20, 21 y 22 de Octubre de 2016</string>
+    <string name="principal_ubicacion">Ubicación</string>
+    <string name="principal_ubi_content">Popayan (Cauca) - Teatro Guillermo Leon Valencia</string>
+    <string name="title_activity_maps_event">Map</string>
+    <string name="btn_text_ubi">Ubicación</string>
+    <string name="btn_text_principal">Principal</string>
+    <string name="btn_text_horario">Horario</string>
+    <string name="btn_text_ponentes">Ponentes</string>
+    <string name="alert_title">Pabellon 1 Cercano</string>
+    <string name="alert_msg">Desea ver su ubicación?</string>
+    <string name="alert_title2">Pabellon 2 Cercano</string>
+    <string name="ok">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+</resources>

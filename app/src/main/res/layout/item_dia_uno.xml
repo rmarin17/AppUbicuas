@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/imagen"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/rotulo"
+            android:scaleType="centerCrop"/>
+
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hora"
+                android:text="Hora"
+                android:textColor="#000"
+                android:layout_alignBottom="@+id/id_hora"
+                android:layout_toRightOf="@+id/id_hora"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/imagen"
+                android:layout_toEndOf="@+id/id_hora" />
+    
+            <ImageView
+                android:id="@+id/id_hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_hora"
+                android:layout_alignLeft="@+id/id_lugar"
+                android:layout_alignStart="@+id/id_lugar"
+                android:layout_below="@+id/imagen"
+                android:paddingTop="10dp"/>
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:id="@+id/des"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hora"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="Descripción:"/>
+
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/descripcion"
+                android:text="Descripcion"
+                android:layout_below="@+id/des"
+                android:textColor="#000"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                 />
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:id="@+id/pon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/descripcion"
+                   android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#000"
+                    android:text="Ponente:"/>
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ponente"
+                android:text="Ponente"
+                android:textSize="17dp"
+                android:textColor="#000"
+                android:layout_below="@+id/pon"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                 />
+
+
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lugar"
+                android:text="Lugar"
+                android:textColor="#000"
+                android:layout_alignTop="@+id/id_lugar"
+                android:layout_toRightOf="@+id/id_lugar"
+                android:layout_toEndOf="@+id/id_lugar" />
+
+            <ImageView
+                android:id="@+id/id_lugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_lugar"
+                android:layout_below="@+id/ponente"
+                android:layout_margin="10dp"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    </FrameLayout>
+</RelativeLayout>

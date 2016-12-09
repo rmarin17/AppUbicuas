@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "24852426305",
+    "firebase_url": "https://tetapp-d7f7e.firebaseio.com",
+    "project_id": "tetapp-d7f7e",
+    "storage_bucket": "tetapp-d7f7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24852426305:android:a95030e027281b6a",
+        "android_client_info": {
+          "package_name": "com.example.ricardom.tet2016"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24852426305-cil1p6p9kibhl37lfb6mm2svjsp4egd5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBit0awKpjpOpmsWsDoQRPTdG7pgLLC-2Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
