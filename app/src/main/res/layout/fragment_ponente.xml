@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
     <data>
@@ -11,58 +9,10 @@
             type="com.example.ricardom.tet2016.adapters.Dia1Adapter"/>
     </data>
 
-    <TableLayout
-        android:id="@+id/activity_principal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#ffff"
-        android:stretchColumns="*"
-        >
-            <FrameLayout
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                tools:context="com.example.ricardom.prueba1.fragments.PonenteFragment">
-
                 <ListView
                     android:id="@+id/list"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     />
-
-            </FrameLayout>
-
-        <TableRow
-            android:paddingBottom="@dimen/small"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:id="@+id/btnHorario"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:clickable="true"
-                >
-
-                <ImageView
-                    android:layout_width="@dimen/icon_btn"
-                    android:layout_height="@dimen/icon_btn"
-                    android:src="@drawable/ic_list_pon"
-                    />
-                <TextView
-                    style="@style/Base.TextAppearance.AppCompat.Body2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Volver a Lista de Ponentes"
-                    android:textColor="@color/txtBtn"
-                    />
-            </LinearLayout>
-
-        </TableRow>
-
-    </TableLayout>
 
 </layout>

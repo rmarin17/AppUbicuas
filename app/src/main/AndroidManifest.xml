@@ -26,7 +26,7 @@
 
 
         <activity
-            android:name=".MapsEvent"
+            android:name=".Principal"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTransparent">
             <intent-filter>
@@ -40,8 +40,6 @@
             android:label="PROGRAMACIÓN"
             android:theme="@style/NoActionBar"
             android:screenOrientation="portrait"/>
-        <activity android:name=".Conferencista" />
-        <activity android:name=".ConferencistaList" />
 
         <service android:name=".MyFirebaseMessagingService">
             <intent-filter>
@@ -60,7 +58,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyC-Bnnfw6JQN0RX9nMOAiMQMSggeveNmUU" />
         <activity
-            android:name=".Principal"
+            android:name=".MapsEvent"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTransparent"/>
         <activity

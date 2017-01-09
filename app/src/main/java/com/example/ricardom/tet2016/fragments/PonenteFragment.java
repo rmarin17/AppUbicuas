@@ -23,7 +23,7 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PonenteFragment extends Fragment implements View.OnClickListener {
+public class PonenteFragment extends Fragment {
 
     LinearLayout prog;
 
@@ -49,7 +49,6 @@ public class PonenteFragment extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment_ponente, container, false);
 
         prog = (LinearLayout) view.findViewById(R.id.btnHorario);
-        prog.setOnClickListener(this);
 
         list = (ListView) view.findViewById(R.id.list);
         data = new ArrayList<>();
@@ -442,18 +441,4 @@ public class PonenteFragment extends Fragment implements View.OnClickListener {
 
     }
 
-
-    @Override
-    public void onClick(View v) {
-
-        int r = 0;
-
-        switch (v.getId()) {
-            case R.id.btnHorario:
-                Intent btnprog = new Intent(getContext(), Ponentes.class);
-                startActivity(btnprog);
-                break;
-
-        }
-    }
 }

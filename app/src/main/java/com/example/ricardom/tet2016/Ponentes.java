@@ -1,38 +1,23 @@
 package com.example.ricardom.tet2016;
 
-import android.app.Activity;
-import android.content.Intent;
+
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.ViewPager;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.Toast;
 
-import com.example.ricardom.tet2016.adapters.PagerAdapter;
-import com.example.ricardom.tet2016.databinding.ActivityConferencistaListBinding;
 import com.example.ricardom.tet2016.databinding.ActivityPonentesBinding;
 import com.example.ricardom.tet2016.fragments.PonenteFragment;
 import com.example.ricardom.tet2016.fragments.PonenteProFragment;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Ponentes extends AppCompatActivity implements PonenteProFragment.OnPonenteSelectedListener {
 
-
-    ViewPager pager;
-    PagerAdapter adapter;
     ActivityPonentesBinding binding;
 
     PonenteFragment ponente1;
     PonenteProFragment ponentepro;
 
-
-
+    boolean secondScreen, firstScreen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +29,7 @@ public class Ponentes extends AppCompatActivity implements PonenteProFragment.On
         ponentepro = new PonenteProFragment();
 
         putFragment(R.id.container, ponentepro);
+        firstScreen = true;
 
     }
 
@@ -61,5 +47,26 @@ public class Ponentes extends AppCompatActivity implements PonenteProFragment.On
         ponente1.setPonente(ponente);
         //getSupportActionBar().setTitle("Ponente");
         putFragment(R.id.container, ponente1);
+        secondScreen = true;
     }
+
+
+    private long pulsacionBackInicial = 0;
+    private long pulsacionBackActual = 0;
+    private int tiempoEnMilisegundos = 1000;
+
+    @Override
+    public void onBackPressed() {
+        pulsacionBackActual = System.currentTimeMillis();
+
+        if(secondScreen) {
+            putFragment(R.id.container, ponentepro);
+        }
+        if (pulsacionBackActual - pulsacionBackInicial > tiempoEnMilisegundos) {
+            pulsacionBackInicial = pulsacionBackActual;
+        }
+        else{
+            super.onBackPressed();}
+    }
+
 }

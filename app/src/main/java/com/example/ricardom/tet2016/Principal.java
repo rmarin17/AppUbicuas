@@ -28,8 +28,7 @@ import java.util.List;
 public class Principal extends AppCompatActivity implements View.OnClickListener {
 
    LinearLayout prog, pon, ubic;
-    Conferencista ponente1;
-    ConferencistaList ponentepro;
+
 
     BeaconReceiver receiver;
 
@@ -48,9 +47,6 @@ public class Principal extends AppCompatActivity implements View.OnClickListener
         prog = (LinearLayout) findViewById(R.id.btnHorario);
         pon = (LinearLayout) findViewById(R.id.btnPonentes);
         ubic = (LinearLayout) findViewById(R.id.btnMapa);
-
-        ponente1 = new Conferencista();
-        ponentepro = new ConferencistaList();
 
         prog.setOnClickListener(this);
         pon.setOnClickListener(this);
